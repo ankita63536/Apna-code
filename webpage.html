@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            background-color: #ffffff;
+            color: #c71f1f;
+            transition:all 0.9s ease;
+          }
+          .content{
+                 padding: 20px;
+          }
+          button{
+            padding: 15px 15px;
+            background-color: black;
+            border: 30px;
+            border-radius: 20px;ss
+          }
+          body.dark-mode{
+            background-color: #000000;
+            color:white;
+          }
+          body.dark-mode button{
+            background-color: #ffffff;
+            color:#49afb1;
+          }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <h1>create the first webpage </h1>
+        <p>welcome the javascript</p>
+        </center>
+    <div class="content">
+        <button id="theme-toggle"></button>
+    </div>
+    <script>
+        const togglebutton=document.getElementById('theme-toggle');
+        togglebutton.addEventListener('click',()=> 
+        {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
